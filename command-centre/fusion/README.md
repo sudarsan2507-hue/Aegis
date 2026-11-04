@@ -1,4 +1,4 @@
-# Fusion — the Gen AI intelligence layer
+# Fusion - the Gen AI intelligence layer
 
 **Co-leads:** Pushkar · Prayag
 The piece that makes Aegis more than three separate classifiers: it correlates
@@ -20,7 +20,7 @@ graph JSON ─┘                                                │
 
 - **The correlation engine is NOT the LLM.** Links come from concrete evidence:
   shared district, geo proximity (≤30 km), temporal proximity (≤96 h). The LLM
-  only *narrates* established facts — it's instructed to never invent links.
+  only *narrates* established facts - it's instructed to never invent links.
   That makes the intelligence package reproducible (`audit_trail.inputs_hash`)
   and defensible for the legal-admissibility judging criterion.
 - **Threat levels:** all 3 domains linked → `critical`; 2 → `high`;
@@ -34,7 +34,7 @@ graph JSON ─┘                                                │
 cd command-centre/fusion
 uv venv && uv pip install -e ".[dev]"
 
-# optional — enables the live Gen AI narrator:
+# optional - enables the live Gen AI narrator:
 echo ANTHROPIC_API_KEY=sk-ant-... > .env      # gitignored, never commit
 
 .venv/Scripts/python -m aegis_fusion.fuse     # demo (uses contract samples +
@@ -49,5 +49,5 @@ echo ANTHROPIC_API_KEY=sk-ant-... > .env      # gitignored, never commit
 ## Wiring into the dashboard (for the backend)
 Call `aegis_fusion.fuse.fuse(scams, counterfeits, fraud_graph)` with the raw
 module payloads; render `summary`, `threat_level`, `recommended_actions`, and
-plot `map_hotspots` on the crime map (overlapping clusters = coordinated hub —
+plot `map_hotspots` on the crime map (overlapping clusters = coordinated hub - 
 innovation #3).

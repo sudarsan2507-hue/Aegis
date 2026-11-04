@@ -1,9 +1,9 @@
-# 🚀 Aegis — Deployment Guide
+# 🚀 Aegis - Deployment Guide
 
 Aegis is **6 services** that talk over HTTP. This guide covers two paths:
 
-1. **Local (recommended for the demo)** — one script, zero cost, no cloud flakiness on stage.
-2. **Cloud (Render + Vercel)** — a shareable public link.
+1. **Local (recommended for the demo)** - one script, zero cost, no cloud flakiness on stage.
+2. **Cloud (Render + Vercel)** - a shareable public link.
 
 | Service | Port | Runtime | Notes |
 |---|---|---|---|
@@ -16,9 +16,9 @@ Aegis is **6 services** that talk over HTTP. This guide covers two paths:
 
 ---
 
-## Option 1 — Local (recommended)
+## Option 1 - Local (recommended)
 
-**Judges watch a live demo — running locally is the norm and avoids cloud cold-starts /
+**Judges watch a live demo - running locally is the norm and avoids cloud cold-starts /
 timeouts on stage.** See [`demo-script.md`](demo-script.md) for the run-of-show.
 
 ### First time (fresh checkout)
@@ -37,20 +37,20 @@ Takes a while the first time (torch is ~2 GB). Requires Python 3.11+, Node 18+, 
 Then open **http://localhost:3000**. The two citizen demo UIs are at
 `:8001/` (scam chat) and `:8002/` (camera scanner).
 
-### Optional — live Gen AI narrator
+### Optional - live Gen AI narrator
 Drop a key in `command-centre/fusion/.env` (a deterministic template narrator runs without one):
 ```
-GROQ_API_KEY=gsk_...      # free & fast — get one at console.groq.com
+GROQ_API_KEY=gsk_...      # free & fast - get one at console.groq.com
 ```
 
 ---
 
-## Option 2 — Cloud (Render + Vercel, free tier)
+## Option 2 - Cloud (Render + Vercel, free tier)
 
 A public URL. **Honest caveats up front:**
 - Free tiers **cold-start** (services sleep after ~15 min idle → first request is slow). Hit
   each service once before demoing.
-- **Counterfeit Vision (torch ~2 GB) is the hard part** — it often exceeds free-tier build/RAM
+- **Counterfeit Vision (torch ~2 GB) is the hard part** - it often exceeds free-tier build/RAM
   limits. Options: use a paid Render instance for that one service, deploy CPU-only torch
   (`torch --index-url https://download.pytorch.org/whl/cpu`), or run it locally while the rest
   is cloud-hosted.
@@ -90,7 +90,7 @@ Fraud Graph and Counterfeit Vision follow the same shape (`fraud-graph serve` re
 
 > **Wiring:** the backend currently hard-codes module URLs (`127.0.0.1:8001-8003` in
 > `api.py:MODULES`). For cloud, make those env-configurable
-> (`FRAUD_SHIELD_URL`, `COUNTERFEIT_URL`, `FRAUD_GRAPH_URL`) — a small change, not yet done.
+> (`FRAUD_SHIELD_URL`, `COUNTERFEIT_URL`, `FRAUD_GRAPH_URL`) - a small change, not yet done.
 > Same for the counterfeit `COUNTERFEIT_PUBLIC_URL` so note images resolve.
 
 ### Deploy order
@@ -98,17 +98,17 @@ ML services → backend → gateway → dashboard (each needs the previous one's
 
 ---
 
-## Option 3 — Docker Compose (one VM, all 6 services)
+## Option 3 - Docker Compose (one VM, all 6 services)
 
 Cleaner than juggling 6 Render services, handles torch fine, ~$5–10/mo on a small VPS (or free
-on your own machine). **Not yet scaffolded** — would need a `Dockerfile` per service + a
+on your own machine). **Not yet scaffolded** - would need a `Dockerfile` per service + a
 `docker-compose.yml` on a shared network. Ask if you want this built; it's the best path for a
 portfolio-grade always-on deploy.
 
 ---
 
 ## Pre-demo checklist (local)
-- [ ] `./run-all.ps1` — all 6 windows up, no errors
+- [ ] `./run-all.ps1` - all 6 windows up, no errors
 - [ ] http://localhost:3000 loads, header health pills green
 - [ ] `command-centre/fusion/.env` has a working `GROQ_API_KEY` (or accept template narrator)
 - [ ] Ran each wow-moment once to warm caches (see [`demo-script.md`](demo-script.md))

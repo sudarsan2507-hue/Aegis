@@ -1,4 +1,4 @@
-# 🏗️ Aegis — System Architecture
+# 🏗️ Aegis - System Architecture
 
 > Owned by the command-centre lead (Pushkar). Reflects the **3-website setup** decided 2026-07-07.
 
@@ -6,11 +6,11 @@
 
 | # | Site | Audience | Owner | Emits |
 |---|---|---|---|---|
-| 1 | **Currency-check website** — upload/scan a note, get genuine/fake verdict | Citizens | Adharshan (counterfeit-vision) | `counterfeit` JSON → gateway |
-| 2 | **Scam-alert website** — paste/read a message or call transcript, get scam verdict + public alerts | Citizens | Sudarsan (fraud-shield-nlp) | `scam_detection` JSON → gateway |
-| 3 | **Command-centre dashboard** — police/analyst view: cards + crime map + fusion | Law enforcement | Pushkar | consumes everything |
+| 1 | **Currency-check website** - upload/scan a note, get genuine/fake verdict | Citizens | Adharshan (counterfeit-vision) | `counterfeit` JSON → gateway |
+| 2 | **Scam-alert website** - paste/read a message or call transcript, get scam verdict + public alerts | Citizens | Sudarsan (fraud-shield-nlp) | `scam_detection` JSON → gateway |
+| 3 | **Command-centre dashboard** - police/analyst view: cards + crime map + fusion | Law enforcement | Pushkar | consumes everything |
 
-**Fraud Graph gets no separate website** — it is not citizen-facing. It runs as an internal
+**Fraud Graph gets no separate website** - it is not citizen-facing. It runs as an internal
 service (`:8003`) and its rings render inside the dashboard (left panel + map districts).
 
 ## Data flow
@@ -44,11 +44,11 @@ flowchart LR
     FE -- "GET /api/events · /api/hotspots\nPOST /api/fuse" --> GW
 ```
 
-- **Contracts** (`contracts/*.schema.json`) are the only coupling between modules — every
+- **Contracts** (`contracts/*.schema.json`) are the only coupling between modules - every
   arrow above carries JSON validated against them.
 - The **fusion layer stays in Python** (it imports directly into the FastAPI backend); the
   Express gateway is the public entry point so internal services are never exposed.
-- **Map tiles are keyless & free** (CARTO dark / Esri imagery via MapLibre GL) — the demo
+- **Map tiles are keyless & free** (CARTO dark / Esri imagery via MapLibre GL) - the demo
   cannot die on a missing API token.
 
 ## Detect → Disrupt → Respond (three stakeholders)
@@ -102,16 +102,16 @@ flowchart LR
 | `POST /actions/{id}/dispatch\|acknowledge\|dismiss` | act on one action (simulated dispatch, audited) |
 | `POST /institution/screen-account` | AML risk for one account (X-API-Key) |
 | `POST /institution/verify-note` | teller/POS note check (X-API-Key) |
-| `GET /metrics` | Model Card — measured P/R, FPR, AUC, per-family, lead time |
+| `GET /metrics` | Model Card - measured P/R, FPR, AUC, per-family, lead time |
 | `POST /citizen/analyze` | citizen message check in 22 languages (Sarvam translate → Fraud Shield → advisory back) |
-| `POST /citizen/call/analyze` | real-time call monitoring — running verdict from the transcript so far; mid-call intercept |
+| `POST /citizen/call/analyze` | real-time call monitoring - running verdict from the transcript so far; mid-call intercept |
 | `POST /citizen/whatsapp` | WhatsApp transport adapter over the same pipeline |
 | `GET /citizen/languages` | supported languages + whether translation is live |
 
-- **Additive contract:** `contracts/response_action.schema.json` — an action never asserts guilt;
+- **Additive contract:** `contracts/response_action.schema.json` - an action never asserts guilt;
   it carries `trigger.refs` (evidence chain) + an append-only `audit` log for admissibility.
 - **Honest posture:** each model is labelled Predictive (Fraud Shield, pre-transfer) /
-  Point-of-contact (Counterfeit) / Fast-classification (Graph) — no overclaiming "predictive".
+  Point-of-contact (Counterfeit) / Fast-classification (Graph) - no overclaiming "predictive".
 
 ## Ports
 
@@ -126,7 +126,7 @@ flowchart LR
 
 ---
 
-## Appendix — detection & fusion internals
+## Appendix - detection & fusion internals
 
 > Deeper diagrams from the fusion/detection side (Prayag). The 3-website flow above is the
 > deployment topology; this appendix is what happens *inside* the boxes.
@@ -148,7 +148,7 @@ sequenceDiagram
     L->>L: narrate + recommend actions (JSON-constrained)
     L->>B: summary + actions
     B->>D: fusion_output.json (contract-valid, audit hash)
-    Note over C,L: LLM cannot create links — only narrate them.<br/>audit_trail.inputs_hash makes every package reproducible.
+    Note over C,L: LLM cannot create links - only narrate them.<br/>audit_trail.inputs_hash makes every package reproducible.
 ```
 
 ## Why this architecture wins the judged criteria
@@ -158,7 +158,7 @@ sequenceDiagram
 | **Innovation** | Fusion of 3 independent detectors; deterministic-evidence + LLM-narration split; cross-domain DBSCAN hubs; LLM red-team self-improvement loop |
 | **Auditability / legal admissibility** | Marker evidence spans (NLP), per-feature check scores (CV), feature importances (graph), correlation basis + reproducible `inputs_hash` (fusion) |
 | **Low false positives** | Every module thresholds precision-first from its PR curve; `legit`/`genuine` verdicts are excluded from correlation entirely |
-| **Scalability** | Modules are independent services speaking versioned JSON contracts — swap any model without touching the rest |
+| **Scalability** | Modules are independent services speaking versioned JSON contracts - swap any model without touching the rest |
 | **Resilience (demo!)** | LLM failover chain ends in a deterministic template; dashboard degrades gracefully per-module |
 
 ## Port map

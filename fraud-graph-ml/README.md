@@ -1,10 +1,10 @@
-# Fraud Graph — Fraud Network Detection (Graph ML) ⭐
+# Fraud Graph - Fraud Network Detection (Graph ML) ⭐
 
 **Lead:** Prayag
-**AI type:** discriminative graph ML (not Gen AI) — highest technical ceiling of the four modules
+**AI type:** discriminative graph ML (not Gen AI) - highest technical ceiling of the four modules
 
 ## Goal
-Cluster transaction / account data to **flag illicit fraud rings** — the "follow the money"
+Cluster transaction / account data to **flag illicit fraud rings** - the "follow the money"
 module. Output a set of rings (clusters of colluding accounts) + per-account risk, rendered
 by the command centre as a graph where fraud rings light up red.
 
@@ -20,7 +20,7 @@ Study [`../contracts/samples/fraud_graph.sample.json`](../contracts/samples/frau
    coefficient, connected components) + **XGBoost / Random Forest** for illicit classification.
 3. Cluster flagged accounts into **rings** (connected components / community detection over
    the high-risk subgraph) → emit `rings[]`.
-4. **GNN is CUT for the 15-day plan** — graph-features + XGBoost only. (GraphSAGE/GCN only if
+4. **GNN is CUT for the 15-day plan** - graph-features + XGBoost only. (GraphSAGE/GCN only if
    the 20-day timeline is restored *and* the simple version is solid by ~day 10.)
 
 ## Quickstart
@@ -32,10 +32,10 @@ uv venv && uv pip install -e ".[dev]"      # one-time setup
 .venv/Scripts/python -m pytest             # test suite
 ```
 
-API endpoints (port 8003 — convention: NLP=8001, CV=8002, graph=8003):
-- `GET /health` — liveness
-- `GET /fraud-graph` — latest contract JSON (runs pipeline on first call)
-- `POST /detect` — force fresh detection
+API endpoints (port 8003 - convention: NLP=8001, CV=8002, graph=8003):
+- `GET /health` - liveness
+- `GET /fraud-graph` - latest contract JSON (runs pipeline on first call)
+- `POST /detect` - force fresh detection
 
 ## Folder layout (self-contained)
 ```
@@ -53,7 +53,7 @@ src/aegis_fraud_graph/
   cli.py       # typer CLI (train/detect/demo/serve)
   api.py       # FastAPI service for the command centre
 models/      # saved XGBoost model + train_report.json (gitignored)
-output/      # fraud_graph.json (committed on purpose — integration artifact
+output/      # fraud_graph.json (committed on purpose - integration artifact
              # the command centre seeds from; see backend store.seed_demo_data)
 tests/       # incl. end-to-end contract-compliance test
 ```
@@ -64,12 +64,12 @@ tests/       # incl. end-to-end contract-compliance test
 - Ring recovery: **12/12 rings (100% detection rate)**, precision 1.0, account recall 0.94
 - Topology labels: layering chain / mule collection hub / round-tripping cycle
 
-**Real data — Elliptic++ actors (Bitcoin wallets):**
+**Real data - Elliptic++ actors (Bitcoin wallets):**
 - *Our graph pipeline on the induced subgraph* (all 14,266 illicit + 50k licit, structure-only
-  features): ROC-AUC **0.945** — proves the pipeline transfers to real data unchanged
+  features): ROC-AUC **0.945** - proves the pipeline transfers to real data unchanged
   (`fraud-graph demo --source elliptic`)
 - *Official benchmark features* (full 265k labeled wallets, 55 behavioural features):
-  ROC-AUC **0.9945**, avg precision **0.950**, **precision 0.90 @ recall 0.85** —
+  ROC-AUC **0.9945**, avg precision **0.950**, **precision 0.90 @ recall 0.85** - 
   benchmark-competitive (`python -m aegis_fraud_graph.elliptic_bench`)
 
 ## Tech
@@ -81,7 +81,7 @@ NetworkX / PyTorch Geometric (stretch) · XGBoost · pandas · scikit-learn
 - [x] Accounts clustered into rings with `risk_score`
 - [x] Emits valid `fraud_graph` JSON (accounts + rings + top-N edges)
 - [x] FastAPI endpoint ready for the command centre (`fraud-graph serve`)
-- [ ] Handed off to the command centre (Phase 3) — endpoint ready, integration pending
+- [ ] Handed off to the command centre (Phase 3) - endpoint ready, integration pending
 - [ ] (Optional) Re-validated on real Elliptic++ data once dataset access is sorted
 
 ## ⚠️ Note: Prayag also co-owns the command-centre Gen AI fusion layer

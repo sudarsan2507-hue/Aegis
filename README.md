@@ -19,14 +19,14 @@
 ![Cost](https://img.shields.io/badge/infra%20cost-%E2%82%B90-10b981?style=flat-square)
 ![Keys](https://img.shields.io/badge/runs%20with-zero%20API%20keys-06b6d4?style=flat-square)
 
-*ET AI Hackathon 2026 · Problem Statement #6 — Defeating Counterfeiting, Fraud & Digital Arrest Scams*
+*ET AI Hackathon 2026 · Problem Statement #6 - Defeating Counterfeiting, Fraud & Digital Arrest Scams*
 Smart Cities · Public Safety · Digital Trust · Geospatial Law Enforcement
 
 </div>
 
 ---
 
-> **Our aim was to reduce the investigative burden carried by the police — and to push past detection into prediction: inferring the most probable route the criminal money and counterfeit notes travelled, and the most probable place the operation is run from, so an officer opens a case with a ranked, evidence-backed lead instead of a stack of unconnected complaints.**
+> **Our aim was to reduce the investigative burden carried by the police - and to push past detection into prediction: inferring the most probable route the criminal money and counterfeit notes travelled, and the most probable place the operation is run from, so an officer opens a case with a ranked, evidence-backed lead instead of a stack of unconnected complaints.**
 
 ---
 
@@ -38,16 +38,16 @@ Smart Cities · Public Safety · Digital Trust · Geospatial Law Enforcement
 
 ## 🔥 The problem
 
-> **1.14 million** cybercrime complaints in India in 2023 — **up 60%** year-on-year.
+> **1.14 million** cybercrime complaints in India in 2023 - **up 60%** year-on-year.
 > **₹1,776 crore** stolen by "digital arrest" scams in just **9 months of 2024** (MHA).
 > **2.47 million+** Layer-1 mule accounts flagged by I4C; **₹17,000+ crore** lost since 2023.
-> **Record FICN seizures** (RBI 2025) — ₹500 fakes good enough to beat manual bank checks.
+> **Record FICN seizures** (RBI 2025) - ₹500 fakes good enough to beat manual bank checks.
 
-These are not opportunistic crimes. They are **industrialised operations** — fraud compounds, spoofed numbers, AI-generated voices, fake government portals, rented mule accounts, farmed SIMs.
+These are not opportunistic crimes. They are **industrialised operations** - fraud compounds, spoofed numbers, AI-generated voices, fake government portals, rented mule accounts, farmed SIMs.
 
 **The gap is not evidence after the fact. It is intelligence before mass victimisation.**
 
-Today a scam call is reported *after* the victim pays. A fake note is found *after* it circulates. A mule ring is unwound *months* later. And nothing connects the three — police see three unrelated cases where there is **one operation**.
+Today a scam call is reported *after* the victim pays. A fake note is found *after* it circulates. A mule ring is unwound *months* later. And nothing connects the three - police see three unrelated cases where there is **one operation**.
 
 ---
 
@@ -62,11 +62,11 @@ Scam calls, mule rings, and counterfeit cash are not three problems. They are **
  phishing               round-tripping                  notes circulate
 ```
 
-This isn't a narrative device — it's documented, and [`docs/crime-pipeline.md`](docs/crime-pipeline.md) carries the citations:
+This isn't a narrative device - it's documented, and [`docs/crime-pipeline.md`](docs/crime-pipeline.md) carries the citations:
 
-- Scam proceeds land **immediately in mule accounts** (RBI's own definition). The state's countermeasure — **RBI MuleHunter.ai** and the May 2026 **I4C–RBIH MoU** — validates this architecture. *Our fraud-graph module is a working MuleHunter-class engine; our fusion layer goes one step further and joins the mule ring back to the scam that fed it.*
-- Laundered money **exits into cash**, and the criminal cash layer is exactly where **FICN** circulates — itself a trafficking network (NIA runs a dedicated Terror Funding & Fake Currency Cell).
-- The **same districts** host multiple crime types (Jamtara belt, Mewat belt) because the *enabling infrastructure* is shared — rented accounts, SIM farms, forged KYC, local agents. **Infrastructure clusters geographically, not crime type** — which is why two independent detections converging on one district is real evidence of an organised hub.
+- Scam proceeds land **immediately in mule accounts** (RBI's own definition). The state's countermeasure - **RBI MuleHunter.ai** and the May 2026 **I4C–RBIH MoU** - validates this architecture. *Our fraud-graph module is a working MuleHunter-class engine; our fusion layer goes one step further and joins the mule ring back to the scam that fed it.*
+- Laundered money **exits into cash**, and the criminal cash layer is exactly where **FICN** circulates - itself a trafficking network (NIA runs a dedicated Terror Funding & Fake Currency Cell).
+- The **same districts** host multiple crime types (Jamtara belt, Mewat belt) because the *enabling infrastructure* is shared - rented accounts, SIM farms, forged KYC, local agents. **Infrastructure clusters geographically, not crime type** - which is why two independent detections converging on one district is real evidence of an organised hub.
 
 **Aegis is the layer that sees all three stages at once.**
 
@@ -94,10 +94,10 @@ This isn't a narrative device — it's documented, and [`docs/crime-pipeline.md`
 | ![Dashboard](docs/Screenshots/01-dashboard.png.png) |
 | *Module health, live signal cards, the cross-domain crime map, and the TAKE → MOVE → CASH OUT pipeline strip.* |
 
-| The fusion moment — the platform's defining feature |
+| The fusion moment - the platform's defining feature |
 |---|
 | ![Fusion](docs/Screenshots/08-fusion.png.png) |
-| *CRITICAL threat written live over deterministic evidence — with **₹49,999 traced into collector account acc_02033**, 29 linked signals, and the correlation basis shown as chips.* |
+| *CRITICAL threat written live over deterministic evidence - with **₹49,999 traced into collector account acc_02033**, 29 linked signals, and the correlation basis shown as chips.* |
 
 | Detection → prediction: the AI Case Officer |
 |---|
@@ -107,15 +107,15 @@ This isn't a narrative device — it's documented, and [`docs/crime-pipeline.md`
 </div>
 
 <details>
-<summary><b>More screenshots</b> — detection, interception, supply trail, disrupt queue, honesty panels</summary>
+<summary><b>More screenshots</b> - detection, interception, supply trail, disrupt queue, honesty panels</summary>
 
 | | |
 |---|---|
-| ![Scam](docs/Screenshots/02-scam-verdict.png.png) **Scam verdict** — markers as evidence | ![Counterfeit](docs/Screenshots/05-counterfeit-fake.png.png) **Fake ₹500** — feature named |
-| ![Intercept](docs/Screenshots/03-live-call-intercept2.png.png) **Mid-call intercept** — before the transfer | ![WhatsApp](docs/Screenshots/04-whatsapp.png.png) **WhatsApp** channel |
-| ![Ring viewer](docs/Screenshots/06-ring-viewer.png.png) **Ring viewer** — the money flow | ![Caught](docs/Screenshots/07-inject-caught.png.png) **Caught in ~3s** — a judge-named gang |
-| ![Supply trail](docs/Screenshots/15-supply-trail.png.png) **Supply Trail** — route & origin | ![Disrupt](docs/Screenshots/12-disrupt.png.png) **Disrupt queue** — SLA + audit |
-| ![Model card](docs/Screenshots/09-model-card.png.png) **Model Card** — measured, untuned | ![Research](docs/Screenshots/10-research-lab.png.png) **Research Lab** — honest negatives |
+| ![Scam](docs/Screenshots/02-scam-verdict.png.png) **Scam verdict** - markers as evidence | ![Counterfeit](docs/Screenshots/05-counterfeit-fake.png.png) **Fake ₹500** - feature named |
+| ![Intercept](docs/Screenshots/03-live-call-intercept2.png.png) **Mid-call intercept** - before the transfer | ![WhatsApp](docs/Screenshots/04-whatsapp.png.png) **WhatsApp** channel |
+| ![Ring viewer](docs/Screenshots/06-ring-viewer.png.png) **Ring viewer** - the money flow | ![Caught](docs/Screenshots/07-inject-caught.png.png) **Caught in ~3s** - a judge-named gang |
+| ![Supply trail](docs/Screenshots/15-supply-trail.png.png) **Supply Trail** - route & origin | ![Disrupt](docs/Screenshots/12-disrupt.png.png) **Disrupt queue** - SLA + audit |
+| ![Model card](docs/Screenshots/09-model-card.png.png) **Model Card** - measured, untuned | ![Research](docs/Screenshots/10-research-lab.png.png) **Research Lab** - honest negatives |
 | ![Hub](docs/Screenshots/11-map-hub.png.png) **Coordinated hub** on the map | ![Bank](docs/Screenshots/13-bank-partner.png.png) **Bank Partner** B2B surface |
 
 </details>
@@ -126,15 +126,15 @@ This isn't a narrative device — it's documented, and [`docs/crime-pipeline.md`
 
 **1 · Catch a scam call, live.** Read a digital-arrest script aloud → flagged at **99.9% risk**, with the exact manipulation markers *and the playbook stage each one satisfies*.
 
-**2 · Intercept before the money moves.** The live-call monitor re-scores the **cumulative transcript** every utterance — risk climbs `12% → 46% → 94%` and fires a **full-screen + spoken intercept before the payment demand completes**.
+**2 · Intercept before the money moves.** The live-call monitor re-scores the **cumulative transcript** every utterance - risk climbs `12% → 46% → 94%` and fires a **full-screen + spoken intercept before the payment demand completes**.
 
 **3 · Catch a note.** Hold a fake ₹500 to the camera → **FAKE**, with the *specific* missing security feature named.
 
-**4 · Catch a gang that didn't exist ten seconds ago.** Judges **name a ring**; it's injected into the transaction stream and **caught in ~3 seconds** with zero retraining — proof the model learned laundering *behaviour*, not account numbers. A **fraud console** goes further: design any money movement; laundering is caught, a normal day comes back clean.
+**4 · Catch a gang that didn't exist ten seconds ago.** Judges **name a ring**; it's injected into the transaction stream and **caught in ~3 seconds** with zero retraining - proof the model learned laundering *behaviour*, not account numbers. A **fraud console** goes further: design any money movement; laundering is caught, a normal day comes back clean.
 
 **5 · The fusion moment.** Press **RUN FUSION**:
 
-> *"A scam call in Alwar is linked to a fraud ring active in the same district, with a traced money trail of **₹49,999 to account acc_02033**…"* — **threat: CRITICAL**
+> *"A scam call in Alwar is linked to a fraud ring active in the same district, with a traced money trail of **₹49,999 to account acc_02033**…"* - **threat: CRITICAL**
 
 That is not a heat map. **That is an account number you can freeze tonight.**
 
@@ -167,7 +167,7 @@ flowchart TB
     R1 & R2 & R3 & R4 & R5 --> PKG["📦 <b>Intelligence package</b><br/>contract-valid + audit hash"]
 
     PKG --> HUB["🗺️ DBSCAN hubs<br/>3 domains = COORDINATED"]
-    PKG --> LLM["🧠 LLM narrator<br/><i>narrates only — cannot<br/>create or remove a link</i>"]
+    PKG --> LLM["🧠 LLM narrator<br/><i>narrates only - cannot<br/>create or remove a link</i>"]
     PKG --> ACT["⚡ Response engine<br/>freeze · block · alert · intercept"]
 
     PKG --> NET["🔬 <b>Network intelligence</b><br/>plate families · serial registry<br/>scam campaigns · supply trail"]
@@ -179,66 +179,66 @@ flowchart TB
     style R5 fill:#7f1d1d,stroke:#ef4444,color:#fff
 ```
 
-**In one sentence:** a scam call gives us *a phone, a district and a victim's payment*; the graph gives us *the account that payment landed in*; a seizure gives us *a district, a defect signature and a serial*. The correlator joins them on space, time, phone and money — and the network-intelligence layers lift that join from "three events" to **"one operation, running along this corridor, printed on this press, using this script."**
+**In one sentence:** a scam call gives us *a phone, a district and a victim's payment*; the graph gives us *the account that payment landed in*; a seizure gives us *a district, a defect signature and a serial*. The correlator joins them on space, time, phone and money - and the network-intelligence layers lift that join from "three events" to **"one operation, running along this corridor, printed on this press, using this script."**
 
-> **Why they can be joined without being coupled:** the modules never import each other. Every link above is computed from published, schema-validated fields — so any model can be swapped without breaking a single connection.
+> **Why they can be joined without being coupled:** the modules never import each other. Every link above is computed from published, schema-validated fields - so any model can be swapped without breaking a single connection.
 
 ---
 
 ## 💡 What is genuinely new here
 
 ### 1 · Cross-domain fusion with a deterministic evidence engine
-**No product correlates scam + counterfeit + fraud-graph signals.** Ours is architecturally novel in *how* it uses Gen AI: links require concrete, checkable evidence; the LLM **narrates** them and **cannot create, remove, or reweigh a link**. `audit_trail.inputs_hash` makes every package reproducible — re-run with the same inputs, get the same hash. *This is the challenge's "agentic AI for multi-source intelligence fusion", built so hallucination is structurally impossible in the evidence path.*
+**No product correlates scam + counterfeit + fraud-graph signals.** Ours is architecturally novel in *how* it uses Gen AI: links require concrete, checkable evidence; the LLM **narrates** them and **cannot create, remove, or reweigh a link**. `audit_trail.inputs_hash` makes every package reproducible - re-run with the same inputs, get the same hash. *This is the challenge's "agentic AI for multi-source intelligence fusion", built so hallucination is structurally impossible in the evidence path.*
 
 ### 2 · A deployed self-improving classifier
-An LLM **red-teams Fraud Shield** — writing next year's scam scripts including families the model has **never seen** (investment fraud, job-task scams). Half augment training; half are held out as unseen future scams.
+An LLM **red-teams Fraud Shield** - writing next year's scam scripts including families the model has **never seen** (investment fraud, job-task scams). Half augment training; half are held out as unseen future scams.
 **Result: recall on held-out unseen variants 68.8% → 100%, zero human labels** (held-out AUC 0.997). Exists in the literature (Jan 2026 paper); in **zero deployed products**.
 
-### 3 · Scam playbooks — a reasoning chain a court can replay
-Markers say *which* tricks appear. Playbooks recognise they form a **script**: authority → fabricated case → isolation → coercion, *in that order*, because each stage sets up the next. Encoded as finite ontologies (not learned — no labelled reasoning chains exist; not generated — a hallucinated chain is fatal for admissibility). **Every stage cites the exact span that satisfied it.** Chain completeness and canonical order become classifier features, so *"4 markers forming a coherent script"* scores differently from *"4 unrelated markers"*.
+### 3 · Scam playbooks - a reasoning chain a court can replay
+Markers say *which* tricks appear. Playbooks recognise they form a **script**: authority → fabricated case → isolation → coercion, *in that order*, because each stage sets up the next. Encoded as finite ontologies (not learned - no labelled reasoning chains exist; not generated - a hallucinated chain is fatal for admissibility). **Every stage cites the exact span that satisfied it.** Chain completeness and canonical order become classifier features, so *"4 markers forming a coherent script"* scores differently from *"4 unrelated markers"*.
 
-### 4 · Agentic verification — checking the scammer's own claims
+### 4 · Agentic verification - checking the scammer's own claims
 A flagged message's entities are extracted and checked with **real tools** under per-tool timeouts and a wall-clock budget: where a shortlink **actually** redirects (SSRF-hardened), whether a quoted **IFSC** exists (free public API), whether a **UPI PSP** is real, phone reputation. An LLM synthesises **only tool-confirmed findings** plus an in-prompt claim cross-check *("CBI does not arrest over WhatsApp")*. It returns a separate `verification` object and **never touches verdict, risk, or markers**.
 
 ### 5 · Counterfeit printing-run detection via a serial registry
-Real counterfeiting is industrial: a press copies **one genuine serial onto every note of a plate**. Aegis validates the **RBI Mahatma Gandhi (New) Series** format (digit + 2 letters + 6 digits; I/O never used; repeated/sequential blocks = prop-money tells), then checks a **durable sighting registry** (MongoDB Atlas → JSON fallback, every path fails open). The same serial in two scans ⇒ `duplicate` ⇒ **evidence of a printing run** — a network signal no single-note scanner can produce.
+Real counterfeiting is industrial: a press copies **one genuine serial onto every note of a plate**. Aegis validates the **RBI Mahatma Gandhi (New) Series** format (digit + 2 letters + 6 digits; I/O never used; repeated/sequential blocks = prop-money tells), then checks a **durable sighting registry** (MongoDB Atlas → JSON fallback, every path fails open). The same serial in two scans ⇒ `duplicate` ⇒ **evidence of a printing run** - a network signal no single-note scanner can produce.
 
 ### 6 · Plate families & campaign fingerprinting
-**Plate families:** counterfeits from one source fail the *same* features — a plate that can't reproduce the security thread fails it on every note (the principle the US Secret Service uses to class counterfeits). Tiered `high` / `probable` / `possible`, each listing its evidence.
-**Scam campaigns:** one gang runs one script — near-identical texts across districts are **one campaign**, clustered deterministically by token-Jaccard + shared callback numbers + distinctive-bigram guards.
+**Plate families:** counterfeits from one source fail the *same* features - a plate that can't reproduce the security thread fails it on every note (the principle the US Secret Service uses to class counterfeits). Tiered `high` / `probable` / `possible`, each listing its evidence.
+**Scam campaigns:** one gang runs one script - near-identical texts across districts are **one campaign**, clustered deterministically by token-Jaccard + shared callback numbers + distinctive-bigram guards.
 
-### 7 · Supply Trail — multi-modal provenance inference
-Seizures are snapped to **real documented corridors** (e.g. the Howrah–Delhi Grand Chord through the Jamtara–Dhanbad belt), clustered, walked outward from the densest cluster to infer the **injection zone and origin**, and corroborated against an **FIR corpus**. A multi-modal network (cities/ports/airports merged as physical nodes; intra-corridor, transfer and last-mile edges; weight = distance × mode-plausibility) yields the **k most plausible routes** via **Dijkstra + Yen**, deduplicated by mode-sequence. Deterministic, reproducible, with a confidence band and a **mandatory disclaimer** — an investigative lead, never a verdict.
+### 7 · Supply Trail - multi-modal provenance inference
+Seizures are snapped to **real documented corridors** (e.g. the Howrah–Delhi Grand Chord through the Jamtara–Dhanbad belt), clustered, walked outward from the densest cluster to infer the **injection zone and origin**, and corroborated against an **FIR corpus**. A multi-modal network (cities/ports/airports merged as physical nodes; intra-corridor, transfer and last-mile edges; weight = distance × mode-plausibility) yields the **k most plausible routes** via **Dijkstra + Yen**, deduplicated by mode-sequence. Deterministic, reproducible, with a confidence band and a **mandatory disclaimer** - an investigative lead, never a verdict.
 
 ### 8 · The cap-only AI safety invariant
 Every advisory layer obeys one machine-enforced, test-covered rule:
 
-> An auxiliary finding can make the system **more cautious** — cap a `genuine` verdict to `uncertain`, forcing manual review. It can **never convict and never acquit.**
+> An auxiliary finding can make the system **more cautious** - cap a `genuine` verdict to `uncertain`, forcing manual review. It can **never convict and never acquit.**
 
 A note is never certified genuine while any check fails; a `fake` verdict is never softened. Fraud Shield's **marker safety net** mirrors it: 3+ tripped markers can never render as clean. *This answers "false positives must be very low" with an architecture, not a threshold.*
 
-### 9 · Mid-call intercept — pre-victimisation, not post-complaint
+### 9 · Mid-call intercept - pre-victimisation, not post-complaint
 Cumulative-transcript re-scoring fires a full-screen + spoken intercept **before the payment ask completes**. Detection at the *point of contact*, not the point of complaint.
 
-### 10 · The money trail — a victim's report → a freezable account
-Amount (±1%) ∧ payment 0–96h after the call, matched against **real transaction edges into ring collector accounts**. District is *bonus corroboration, never a gate* — mule rings deliberately operate far from victims; that's the point of layering.
+### 10 · The money trail - a victim's report → a freezable account
+Amount (±1%) ∧ payment 0–96h after the call, matched against **real transaction edges into ring collector accounts**. District is *bonus corroboration, never a gate* - mule rings deliberately operate far from victims; that's the point of layering.
 
 ### 11 · Cross-domain coordinated hubs, honestly tiered
 DBSCAN over all domains (25 km). **All three converging = `coordinated`**; exactly two = `multi_signal`, reported but never overclaimed. *Accuracy over drama, encoded in the tier logic itself.*
 
 ### 12 · Contract-first architecture
-The **only coupling is JSON** — 6 versioned schemas, samples, and a validator run before every hand-off. Four people built four systems in parallel with near-zero merge conflicts. **183 tests** keep the contracts honest.
+The **only coupling is JSON** - 6 versioned schemas, samples, and a validator run before every hand-off. Four people built four systems in parallel with near-zero merge conflicts. **183 tests** keep the contracts honest.
 
 ### 13 · Honest-negative research reporting
-Three real experiments ship **with their negative results as prominent as the positives**, verdicts generated from the data. A red *"federation did NOT beat the best single bank on this run"* box next to a perfect 0.0 false-merge rate is worth more than a fabricated success — and it's the same evidentiary discipline the platform preaches.
+Three real experiments ship **with their negative results as prominent as the positives**, verdicts generated from the data. A red *"federation did NOT beat the best single bank on this run"* box next to a perfect 0.0 false-merge rate is worth more than a fabricated success - and it's the same evidentiary discipline the platform preaches.
 
 ---
 
 ## 📊 Measured results
 
-> Every figure is read from the model's **own persisted train/eval report** — the same files the dashboard's **Model Card** (`GET /metrics`) serves live, with its printed disclaimer: *not recomputed, not tuned for display.*
+> Every figure is read from the model's **own persisted train/eval report** - the same files the dashboard's **Model Card** (`GET /metrics`) serves live, with its printed disclaimer: *not recomputed, not tuned for display.*
 
-### Fraud Shield — scam / digital-arrest
+### Fraud Shield - scam / digital-arrest
 Template-grouped 3-way split (tune on val, report on untouched test) so paraphrases can't leak.
 
 | Metric | Value |
@@ -251,14 +251,14 @@ Template-grouped 3-way split (tune on val, report on untouched test) so paraphra
 | False-alarm rate (1 − precision) | **2.0%** |
 | Train / test | 3,407 / 1,076 |
 
-**Self-improvement loop** — eval half never trained on; two families brand-new:
+**Self-improvement loop** - eval half never trained on; two families brand-new:
 
 | | Before | After |
 |---|---|---|
 | Recall on held-out LLM-evolved variants (n=64) | 68.8% | **100%** |
-| — investment fraud *(never seen)* | 75% | 100% |
-| — job-task scam *(never seen)* | 37.5% | 100% |
-| Held-out ROC-AUC | — | 0.997 |
+| - investment fraud *(never seen)* | 75% | 100% |
+| - job-task scam *(never seen)* | 37.5% | 100% |
+| Held-out ROC-AUC | - | 0.997 |
 | **Human labels used** | **0** | **0** |
 
 ### Counterfeit Vision
@@ -266,7 +266,7 @@ Template-grouped 3-way split (tune on val, report on untouched test) so paraphra
 
 > These figures describe the shipped weights but come from a training report that predates the
 > current `save_report()` (it is missing `uncertain_rate` and `n_val`), so they have not been
-> re-verified against this pipeline — see `models/train_report.json`. Re-run
+> re-verified against this pipeline - see `models/train_report.json`. Re-run
 > `python -m aegis_counterfeit.cli train --force` on the real dataset for a reproducible one.
 > They also measure **print-physics discrimination only**: no accuracy number here covers
 > semantically tampered notes, which is what the semantic review layer is for.
@@ -276,7 +276,7 @@ Template-grouped 3-way split (tune on val, report on untouched test) so paraphra
 | Metric | Value |
 |---|---|
 | ROC-AUC | 0.962 |
-| **Fake-verdict precision** | **1.00** — zero false accusations |
+| **Fake-verdict precision** | **1.00** - zero false accusations |
 | Fake-verdict recall | 0.79 |
 | Uncertain (→ manual check) | 18.3% |
 | OpenCV feature checks | **40/40 genuine clean · 40/40 fakes caught with the correct feature named** |
@@ -293,24 +293,24 @@ Synthetic world = 3 laundering topologies **plus legit heavy actors** (merchants
 | Account P/R within rings | **0.976 / 0.988** |
 | Per-topology | chains, fan-ins **and** cycles all recovered |
 
-**Real-data validation — Elliptic++**, two deliberate tiers:
+**Real-data validation - Elliptic++**, two deliberate tiers:
 
 | Claim | Run | Result |
 |---|---|---|
 | *Our pipeline transfers to real data* | Induced subgraph, **our own** structure-only features (14,266 illicit + 50k licit) | **AUC 0.945** |
 | *The approach is benchmark-competitive* | Official 55 features on the full **823k-wallet** graph | **AUC 0.994** · AP 0.950 · P/R 0.900/0.854 |
 
-It transfers because we score graph **topology** (fan-in/out, layering, community) — not currency-specific features. The same reason it applies to UPI rails.
+It transfers because we score graph **topology** (fan-in/out, layering, community) - not currency-specific features. The same reason it applies to UPI rails.
 
-**Detection latency:** a never-seen ring is caught **~3 s** after its transactions enter the stream. *We label this honestly: "lead time before mass victimisation" is a workflow claim, not a stored number — latency is what is measured.*
+**Detection latency:** a never-seen ring is caught **~3 s** after its transactions enter the stream. *We label this honestly: "lead time before mass victimisation" is a workflow claim, not a stored number - latency is what is measured.*
 
 ### Research lab
 
 | Experiment | Result | Verdict shown |
 |---|---|---|
-| **Ghost Ring** (federated, GraphSAGE + DP + Hungarian matching) | matching precision **1.00**, **false-merge 0.00**; fused recall 0.494 vs best bank 0.73 | 🔴 *Honest negative — privacy-preserving matching validated; recall gain not demonstrated* |
-| **Arms Race** (DEAP co-evolution, + PPO variant) | gen 30: best-escape **0.86**, detector recall **0.20** | 🟠 *Attacker wins — which is why the self-improving loop exists in the product* |
-| **Spectral** (Laplacian Rayleigh quotient + BWGNN + sonification) | ring **0.917** vs matched clean **0.693** — shift **+0.223** | 🟢 *Validated on matched pairs; cross-community ranking labelled a triage hint only* |
+| **Ghost Ring** (federated, GraphSAGE + DP + Hungarian matching) | matching precision **1.00**, **false-merge 0.00**; fused recall 0.494 vs best bank 0.73 | 🔴 *Honest negative - privacy-preserving matching validated; recall gain not demonstrated* |
+| **Arms Race** (DEAP co-evolution, + PPO variant) | gen 30: best-escape **0.86**, detector recall **0.20** | 🟠 *Attacker wins - which is why the self-improving loop exists in the product* |
+| **Spectral** (Laplacian Rayleigh quotient + BWGNN + sonification) | ring **0.917** vs matched clean **0.693** - shift **+0.223** | 🟢 *Validated on matched pairs; cross-community ranking labelled a triage hint only* |
 
 ---
 
@@ -340,10 +340,10 @@ flowchart LR
 ```
 
 **Design rules that made this work:**
-- **Contracts are the only coupling** — 6 schemas in [`contracts/`](contracts/), validated at every hand-off *and* again at the backend ingest door.
-- **The gateway is the single public entry** — internal ML services are never exposed; origin-allowlisted CORS, 5 MB body cap, API-key pass-through.
-- **Keyless free map tiles** (CARTO / Esri via MapLibre) — the demo cannot die on a missing token.
-- **Everything degrades gracefully** — per-module health, LLM failover, fail-open database paths.
+- **Contracts are the only coupling** - 6 schemas in [`contracts/`](contracts/), validated at every hand-off *and* again at the backend ingest door.
+- **The gateway is the single public entry** - internal ML services are never exposed; origin-allowlisted CORS, 5 MB body cap, API-key pass-through.
+- **Keyless free map tiles** (CARTO / Esri via MapLibre) - the demo cannot die on a missing token.
+- **Everything degrades gracefully** - per-module health, LLM failover, fail-open database paths.
 
 📐 Full diagrams: [`docs/architecture.md`](docs/architecture.md)
 
@@ -352,89 +352,89 @@ flowchart LR
 ## 🔬 Module internals
 
 <details open>
-<summary><b>🗣️ Fraud Shield — NLP scam & digital-arrest detection</b></summary>
+<summary><b>🗣️ Fraud Shield - NLP scam & digital-arrest detection</b></summary>
 
-- **Marker engine** — 8 contract-locked markers written for the Indian landscape (CBI/ED/TRAI impersonation, fake FIR, digital-arrest video-call isolation, KYC-freeze pressure, UPI/gift-card/USDT demands, secrecy, spoofed identity), each returning **exact evidence spans**.
-- **Playbooks** — `digital_arrest`, `kyc_fraud`, `advance_fee` as finite ontologies; stage matches cite spans; completeness + canonical order feed the classifier.
-- **Classifier** — word n-grams (*what is said*) ⊕ char n-grams (*obfuscation like `K.Y.C`, `b1t.ly`*) ⊕ marker ⊕ playbook features → Logistic Regression. Baseline-first by plan: trains in seconds, fully inspectable, within a few points of DistilBERT on short-message tasks. Precision-first thresholds from the held-out PR curve.
-- **Corpus** — UCI SMS Spam (5,574 real SMS) + a **seeded, deterministic** synthetic Indian-scam corpus (same seed → same rows → reproducible metrics) with **hard legit negatives** (genuine bank OTPs, real police-verification calls, courier updates) so the model can't key on the word "police".
-- **Live call** — Mode B scripted replay, Mode A browser mic (Chrome/Edge SpeechRecognition, en-IN); cumulative re-scoring; intercept overlay + `speechSynthesis` warning.
-- **WhatsApp** — Twilio webhook with **HMAC-SHA1 `X-Twilio-Signature` validation** (tunnel-aware) → TwiML reply; plus a phone-frame simulator needing zero external deps.
-- **23 languages** — English + all 22 scheduled Indian languages via Sarvam AI (translate in → classify in English → advisory back). A wrapper, not a retrain; fails safe to English and honestly reports `translated: false`.
+- **Marker engine** - 8 contract-locked markers written for the Indian landscape (CBI/ED/TRAI impersonation, fake FIR, digital-arrest video-call isolation, KYC-freeze pressure, UPI/gift-card/USDT demands, secrecy, spoofed identity), each returning **exact evidence spans**.
+- **Playbooks** - `digital_arrest`, `kyc_fraud`, `advance_fee` as finite ontologies; stage matches cite spans; completeness + canonical order feed the classifier.
+- **Classifier** - word n-grams (*what is said*) ⊕ char n-grams (*obfuscation like `K.Y.C`, `b1t.ly`*) ⊕ marker ⊕ playbook features → Logistic Regression. Baseline-first by plan: trains in seconds, fully inspectable, within a few points of DistilBERT on short-message tasks. Precision-first thresholds from the held-out PR curve.
+- **Corpus** - UCI SMS Spam (5,574 real SMS) + a **seeded, deterministic** synthetic Indian-scam corpus (same seed → same rows → reproducible metrics) with **hard legit negatives** (genuine bank OTPs, real police-verification calls, courier updates) so the model can't key on the word "police".
+- **Live call** - Mode B scripted replay, Mode A browser mic (Chrome/Edge SpeechRecognition, en-IN); cumulative re-scoring; intercept overlay + `speechSynthesis` warning.
+- **WhatsApp** - Twilio webhook with **HMAC-SHA1 `X-Twilio-Signature` validation** (tunnel-aware) → TwiML reply; plus a phone-frame simulator needing zero external deps.
+- **23 languages** - English + all 22 scheduled Indian languages via Sarvam AI (translate in → classify in English → advisory back). A wrapper, not a retrain; fails safe to English and honestly reports `translated: false`.
 - **50 tests**, contract-validated.
 
 </details>
 
 <details open>
-<summary><b>💵 Counterfeit Vision — fake-currency detection</b></summary>
+<summary><b>💵 Counterfeit Vision - fake-currency detection</b></summary>
 
-A **layered funnel with explicit authority** — every layer states what it is allowed to
+A **layered funnel with explicit authority** - every layer states what it is allowed to
 conclude, and the payload records which layers actually ran. **Nothing acquits:** no layer
 can turn a `fake` into a `genuine`.
 
-1. **Triage (OpenCV, pre-AI)** — quality gate (resolution / blur / exposure → `unscannable`
+1. **Triage (OpenCV, pre-AI)** - quality gate (resolution / blur / exposure → `unscannable`
    with rescan advice, because the CNN would only produce noise) and four tells: B&W
    photocopy saturation *(conclusive)*, flat-print texture, aspect-ratio window, ink-hue
-   windows. Each tell reports at **two levels** — an *advisory* threshold that records
+   windows. Each tell reports at **two levels** - an *advisory* threshold that records
    evidence, and a much stricter *convicts* threshold a genuine note cannot reach under any
    lighting. Only the strict level counts, and only on a **located** note. `obvious_fake`
    needs ≥2 strict tells or one conclusive one.
-2. **CNN** — EfficientNet-B0, head-only fine-tuning (the textbook small-data recipe), trained
+2. **CNN** - EfficientNet-B0, head-only fine-tuning (the textbook small-data recipe), trained
    on **real photographed genuine + counterfeit notes**. Owns the print-physics call. An
-   `uncertain` band routes to manual check — *a note is money, and the false-positive
-   requirement cuts both ways* — and `MIN_UNCERTAIN_BAND` guarantees that band is ≥0.20 wide.
-3. **Feature checks** — security-thread column-darkness at the true thread position, watermark
-   brightness lift, microprint Laplacian sharpness — each pass/fail **with a numeric score**
+   `uncertain` band routes to manual check - *a note is money, and the false-positive
+   requirement cuts both ways* - and `MIN_UNCERTAIN_BAND` guarantees that band is ≥0.20 wide.
+3. **Feature checks** - security-thread column-darkness at the true thread position, watermark
+   brightness lift, microprint Laplacian sharpness - each pass/fail **with a numeric score**
    → `missing_features`. They may **block a certification** (`genuine` → `uncertain`) but
    never convict: thread and watermark are structural, so one failure blocks; microprint is a
    sharpness measure that soft focus degrades on genuine notes, so it needs a second.
-4. **Semantic review (vision-LLM)** — the **only layer that reads what is printed on the
+4. **Semantic review (vision-LLM)** - the **only layer that reads what is printed on the
    note** rather than measuring how it was printed. Portrait is Gandhi? Header reads "RESERVE
    BANK OF INDIA"? Printed denomination, serial, tampering signs. A wrong portrait or header
-   **convicts** — a note whose portrait is not Gandhi is not a genuine Indian banknote, and
+   **convicts** - a note whose portrait is not Gandhi is not a genuine Indian banknote, and
    that is a fact about content, not a fragile surface measurement. Claude → Gemini → Groq
-   (multimodal Qwen) → unavailable. SPECIMEN is deliberately *not* counterfeit — genuine RBI
+   (multimodal Qwen) → unavailable. SPECIMEN is deliberately *not* counterfeit - genuine RBI
    specimen notes exist; it caps to "not legal tender → manual check". **Without an API key
    the layer reports itself unavailable** and any `genuine` is capped to 0.80 confidence with
    an explicit `caveats` entry.
-5. **Serial layer** — RBI format validation + durable sighting registry (printing-run
+5. **Serial layer** - RBI format validation + durable sighting registry (printing-run
    detection), using the typed-in serial or the one the semantic layer read off the note.
    Caps a certification; never convicts.
 
-**Why layer 4 exists.** Every other layer measures *print physics* — ink saturation, intaglio
-texture, thread darkness, paper sharpness — and the CNN included, since it was trained to
+**Why layer 4 exists.** Every other layer measures *print physics* - ink saturation, intaglio
+texture, thread darkness, paper sharpness - and the CNN included, since it was trained to
 separate real notes from physically counterfeited ones. A genuine note with a different face
 pasted over Gandhi passes all of them: it is real paper with real texture and real ink, and
 one altered region vanishes when EfficientNet pools it at 224×224. Tampering that preserves
 print quality is invisible without a channel that reads content.
 
 Plus contour + perspective-warp **note localisation** so angled phone shots land the feature
-regions — and when localisation *fails*, `analysis.note_located: false` says so and every
+regions - and when localisation *fails*, `analysis.note_located: false` says so and every
 fixed-geometry measurement is barred from the verdict, because it is reading background
 rather than note. **63 tests.**
 
 </details>
 
 <details open>
-<summary><b>🕸️ Fraud Graph — ring detection</b></summary>
+<summary><b>🕸️ Fraud Graph - ring detection</b></summary>
 
-- **Synthetic world** — mule chains (decaying per-hop amounts), smurfing fan-in collectors, round-tripping cycles, **plus legitimate heavy actors**. Chosen deliberately: real fraud datasets are anonymised (no districts, unreadable IDs) and can't demo live; synthetic rings carry **known ground truth** and light up named districts — while the loader swaps in Elliptic++ with one flag.
-- **18 graph features** — fan-in/out ratios, burst ratio, throughput, hold time, PageRank, clustering coefficient, core number, mule score… → **XGBoost** with **persisted feature importances** (auditability is a judged criterion). *The model never sees raw transactions — it sees graph-shaped behaviour, which is what lets it follow the money like an investigator.*
-- **Rings** — high-risk subgraph → Louvain communities (+ connected-component sweep) → named rings scored by mean member probability, each with a **topology label an investigator reads at a glance**.
-- **Live surfaces** — inject-ring (judge-named gangs, ~3 s), fraud console (arbitrary human-designed transactions), reset; **ring viewer** draws the real money flow with plain-word evidence.
-- **Research** — Ghost Ring (GraphSAGE + differential privacy + Hungarian matching + Leiden), Arms Race (DEAP, optional PPO), Spectral (eigendecomposition, BWGNN wavelets, sonification).
+- **Synthetic world** - mule chains (decaying per-hop amounts), smurfing fan-in collectors, round-tripping cycles, **plus legitimate heavy actors**. Chosen deliberately: real fraud datasets are anonymised (no districts, unreadable IDs) and can't demo live; synthetic rings carry **known ground truth** and light up named districts - while the loader swaps in Elliptic++ with one flag.
+- **18 graph features** - fan-in/out ratios, burst ratio, throughput, hold time, PageRank, clustering coefficient, core number, mule score… → **XGBoost** with **persisted feature importances** (auditability is a judged criterion). *The model never sees raw transactions - it sees graph-shaped behaviour, which is what lets it follow the money like an investigator.*
+- **Rings** - high-risk subgraph → Louvain communities (+ connected-component sweep) → named rings scored by mean member probability, each with a **topology label an investigator reads at a glance**.
+- **Live surfaces** - inject-ring (judge-named gangs, ~3 s), fraud console (arbitrary human-designed transactions), reset; **ring viewer** draws the real money flow with plain-word evidence.
+- **Research** - Ghost Ring (GraphSAGE + differential privacy + Hungarian matching + Leiden), Arms Race (DEAP, optional PPO), Spectral (eigendecomposition, BWGNN wavelets, sonification).
 - **44 tests** including end-to-end contract compliance.
 
 </details>
 
 <details open>
-<summary><b>🎛️ Command Centre — fusion, geospatial, intelligence, action</b></summary>
+<summary><b>🎛️ Command Centre - fusion, geospatial, intelligence, action</b></summary>
 
-- **Dashboard (22 components)** — health pills, signal cards, click-to-fly alerts, pipeline strip with fusion-lit arrows, full-bleed MapLibre map with pulsing markers and coordinated-hub rings, **RUN FUSION** typewriter reveal with on-screen audit hash, FusionChatBot, ring viewer, case-file modal, Disrupt / Bank Partner / Supply Trail / Model Card / Research Lab tabs.
-- **AI Case Officer** — `build_dossier()` gathers **deterministic evidence** (scams, rings, seizures, plate families, campaigns, supply trail, temporal flow — every item real module output); an LLM writes summary, timeline, a **hedged** hypothesis and actions, **each citing dossier evidence ids**; references outside the dossier are forbidden; template writer guarantees a brief with zero keys.
-- **Response engine** — deterministic rules → recipient-addressed actions with priority, **SLA against the fraud clock** (critical 30 min · high 2 h · medium 24 h — *a UPI transfer clears in seconds, so a freeze must beat cash-out*), `trigger.refs` evidence chains, append-only audit. **Dispatch is simulated and labelled**; the engine never asserts guilt.
-- **B2B** — `screen-account` (≥0.7 → BLOCK + file STR, ≥0.4 → EDD, else monitor/clear) and terse `verify-note` for POS, behind `X-API-Key`.
-- **Durable briefing cache** — the last real model-written briefing lives in MongoDB so an outage degrades to *"the previous analysis"*, not template prose. Every Mongo path fails open.
+- **Dashboard (22 components)** - health pills, signal cards, click-to-fly alerts, pipeline strip with fusion-lit arrows, full-bleed MapLibre map with pulsing markers and coordinated-hub rings, **RUN FUSION** typewriter reveal with on-screen audit hash, FusionChatBot, ring viewer, case-file modal, Disrupt / Bank Partner / Supply Trail / Model Card / Research Lab tabs.
+- **AI Case Officer** - `build_dossier()` gathers **deterministic evidence** (scams, rings, seizures, plate families, campaigns, supply trail, temporal flow - every item real module output); an LLM writes summary, timeline, a **hedged** hypothesis and actions, **each citing dossier evidence ids**; references outside the dossier are forbidden; template writer guarantees a brief with zero keys.
+- **Response engine** - deterministic rules → recipient-addressed actions with priority, **SLA against the fraud clock** (critical 30 min · high 2 h · medium 24 h - *a UPI transfer clears in seconds, so a freeze must beat cash-out*), `trigger.refs` evidence chains, append-only audit. **Dispatch is simulated and labelled**; the engine never asserts guilt.
+- **B2B** - `screen-account` (≥0.7 → BLOCK + file STR, ≥0.4 → EDD, else monitor/clear) and terse `verify-note` for POS, behind `X-API-Key`.
+- **Durable briefing cache** - the last real model-written briefing lives in MongoDB so an outage degrades to *"the previous analysis"*, not template prose. Every Mongo path fails open.
 - **15 + 9 + 8 + 29 tests** across backend, fusion, geospatial, supply-trail.
 
 </details>
@@ -455,7 +455,7 @@ Every verdict, link, threat level, route and action comes from a **deterministic
 | Action | `trigger.refs` chain, priority/SLA, **append-only audit log** |
 | Model claims | Model Card reads persisted reports **with a printed disclaimer**; postures labelled *Predictive / Point-of-contact / Fast-classification* |
 
-**Failover chain everywhere:** `Claude → Groq (Llama-3.3-70B) → Gemini → deterministic template`, with a Mongo briefing cache as an intermediate floor. **The entire platform runs with zero API keys** — the demo cannot die on stage, and a district deployment cannot die on budget.
+**Failover chain everywhere:** `Claude → Groq (Llama-3.3-70B) → Gemini → deterministic template`, with a Mongo briefing cache as an intermediate floor. **The entire platform runs with zero API keys** - the demo cannot die on stage, and a district deployment cannot die on budget.
 
 **Security & privacy:** precision-first thresholds · cap-only invariants · legit verdicts excluded from correlation · **(ε,δ)-differential privacy** on federated embeddings · hashed tokens · gitignored `.env` · Twilio HMAC validation · SSRF-hardened tools · API-key gated B2B · ingest schema validation · origin-allowlisted CORS · bounded event store.
 
@@ -464,8 +464,8 @@ Every verdict, link, threat level, route and action comes from a **deterministic
 ## 🚀 Quick start
 
 ```powershell
-./setup.ps1        # first time — venvs, deps, model training, npm install
-./run-all.ps1      # every run — all 6 services
+./setup.ps1        # first time - venvs, deps, model training, npm install
+./run-all.ps1      # every run - all 6 services
 ./run-all.ps1 -Stop
 ```
 
@@ -504,13 +504,13 @@ cd command-centre/frontend && npm install && npm run dev
 
 </details>
 
-**Optional Gen AI** — drop a free key in `command-centre/fusion/.env`; without one, deterministic templates keep **every** feature alive:
+**Optional Gen AI** - drop a free key in `command-centre/fusion/.env`; without one, deterministic templates keep **every** feature alive:
 ```
-GROQ_API_KEY=gsk_...        # free & fast — console.groq.com
+GROQ_API_KEY=gsk_...        # free & fast - console.groq.com
 GEMINI_API_KEY=...          # optional
 ANTHROPIC_API_KEY=...       # optional
-SARVAM_API_KEY=...          # optional — 22-language translation
-MONGODB_URI=...             # optional — durable serial registry + briefing cache
+SARVAM_API_KEY=...          # optional - 22-language translation
+MONGODB_URI=...             # optional - durable serial registry + briefing cache
 ```
 
 ---
@@ -519,18 +519,18 @@ MONGODB_URI=...             # optional — durable serial registry + briefing ca
 
 ```
 Aegis/
-├── contracts/              📜 6 JSON schemas + samples — the only coupling between modules
+├── contracts/              📜 6 JSON schemas + samples - the only coupling between modules
 ├── fraud-shield-nlp/       🗣️ markers · playbooks · verify agent · classifier · citizen UIs   :8001
 ├── counterfeit-vision/     💵 triage · CNN · feature checks · serials · vision agent · camera :8002
 ├── fraud-graph-ml/         🕸️ 18 features · XGBoost · rings · ghost-ring/arms-race/spectral    :8003
 ├── command-centre/
-│   ├── backend/            ⚙️ FastAPI — fusion · actions · intel · B2B · case officer         :8000
+│   ├── backend/            ⚙️ FastAPI - fusion · actions · intel · B2B · case officer         :8000
 │   ├── fusion/             🧠 correlator + multi-provider narrator + self-improving classifier
-│   ├── geospatial/         🗺️ DBSCAN hotspots — cross-domain hubs
+│   ├── geospatial/         🗺️ DBSCAN hotspots - cross-domain hubs
 │   ├── supply_trail/       🛤️ corridor engine · multi-modal routes · FIR corroboration
 │   ├── gateway/            🚪 Express 5 public entry point                                     :4000
 │   └── frontend/           🖥️ Next.js 15 + MapLibre dashboard (22 components)                  :3000
-├── shared/                 🔧 contract validator — run before every hand-off
+├── shared/                 🔧 contract validator - run before every hand-off
 ├── docs/                   📐 architecture · demo script · pitch deck · crime-pipeline ·
 │                              deployment · submission document · screenshots
 └── PROJECT_PLAN.md         📋 living plan + dated progress log
@@ -567,21 +567,21 @@ python shared/validate_contract.py scam|counterfeit|graph|fusion <file.json>
 
 ## ⚠️ Honest limitations
 
-*We state these before a judge asks — the platform's credibility **is** its evidentiary discipline.*
+*We state these before a judge asks - the platform's credibility **is** its evidentiary discipline.*
 
-- **Transaction stream is synthetic / Elliptic++** — no live bank feed. That's a partnership, not a tech gap. Production would join by UPI/transaction reference, not amount (same join, stronger key).
-- **Dispatch is simulated** — actions are queued, audited and **labelled simulated**; live telecom/bank/MHA wiring sits behind the already-built response contract.
-- **Rings → counterfeit is geographic convergence**, not a traced artefact — tracing physical cash needs serial capture at seizure (the registry is step one).
-- **Supply-trail provenance is a weighted hypothesis** — corridor-based, FIR-corroborated, disclaimer-carrying. An investigative lead, never proof.
+- **Transaction stream is synthetic / Elliptic++** - no live bank feed. That's a partnership, not a tech gap. Production would join by UPI/transaction reference, not amount (same join, stronger key).
+- **Dispatch is simulated** - actions are queued, audited and **labelled simulated**; live telecom/bank/MHA wiring sits behind the already-built response contract.
+- **Rings → counterfeit is geographic convergence**, not a traced artefact - tracing physical cash needs serial capture at seizure (the registry is step one).
+- **Supply-trail provenance is a weighted hypothesis** - corridor-based, FIR-corroborated, disclaimer-carrying. An investigative lead, never proof.
 - **Live-call audio** is browser STT today; a server STT front-end (Sarvam *saarika*), IVR transport, and validation on real recordings are next. Voice-spoofing detection is roadmap.
-- **Research results are runs, not theorems** — federated recall gain unproven; arms race shows detector decay (*that's the point*); spectral ranking is a triage hint.
+- **Research results are runs, not theorems** - federated recall gain unproven; arms race shows detector decay (*that's the point*); spectral ranking is a triage hint.
 - WhatsApp runs in **Twilio sandbox**; production needs a WhatsApp Business account.
 
 ---
 
 ## ☁️ Deployment
 
-Free-tier, fully env-driven: **Vercel** (dashboard) + **Render** (gateway, backend, ML services — models train on deploy since weights are gitignored) + **MongoDB Atlas M0** (durable serial registry & briefing cache, with fail-open file fallbacks). **Total infra cost: ₹0.** Full guide: [`docs/deployment.md`](docs/deployment.md).
+Free-tier, fully env-driven: **Vercel** (dashboard) + **Render** (gateway, backend, ML services - models train on deploy since weights are gitignored) + **MongoDB Atlas M0** (durable serial registry & briefing cache, with fail-open file fallbacks). **Total infra cost: ₹0.** Full guide: [`docs/deployment.md`](docs/deployment.md).
 
 ---
 
@@ -589,7 +589,7 @@ Free-tier, fully env-driven: **Vercel** (dashboard) + **Render** (gateway, backe
 
 | Doc | What's in it |
 |---|---|
-| [`docs/submission.md`](docs/submission.md) | **Full submission document** — the complete technical write-up |
+| [`docs/submission.md`](docs/submission.md) | **Full submission document** - the complete technical write-up |
 | [`docs/architecture.md`](docs/architecture.md) | System, fusion-sequence and Detect→Disrupt→Respond diagrams |
 | [`docs/crime-pipeline.md`](docs/crime-pipeline.md) | The researched thesis with public-record citations |
 | [`docs/demo-script.md`](docs/demo-script.md) | 6-minute run-of-show with fallbacks + Q&A ammunition |
@@ -603,19 +603,19 @@ Free-tier, fully env-driven: **Vercel** (dashboard) + **Render** (gateway, backe
 
 | | Owner | Module |
 |---|---|---|
-| 🗣️ | **Sudarsan** | Fraud Shield — classifier, markers, playbooks, corpus, chat UI, live-call monitor, WhatsApp |
-| 💵 | **Adharshan** | Counterfeit Vision — CNN, real-dataset training, camera UI |
-| 🕸️ | **Prayag** | Fraud Graph + Gen AI fusion — rings, Elliptic++, research lab, correlator, narrator, self-improve loop |
-| 🎛️ | **Pushkar** | Command Centre — dashboard, gateway, map, 3-website architecture |
+| 🗣️ | **Sudarsan** | Fraud Shield - classifier, markers, playbooks, corpus, chat UI, live-call monitor, WhatsApp |
+| 💵 | **Adharshan** | Counterfeit Vision - CNN, real-dataset training, camera UI |
+| 🕸️ | **Prayag** | Fraud Graph + Gen AI fusion - rings, Elliptic++, research lab, correlator, narrator, self-improve loop |
+| 🎛️ | **Pushkar** | Command Centre - dashboard, gateway, map, 3-website architecture |
 
 ---
 
 ## 📦 Deliverables
 
-- ✅ **Working prototype** — 6 services, 3 websites, 31 endpoints, 183 tests, all paths verified end-to-end
-- ✅ **Architecture diagram** — [`docs/architecture.md`](docs/architecture.md)
-- ✅ **Presentation deck** — [`docs/pitch-deck.md`](docs/pitch-deck.md)
-- 🎬 **Demo video** — https://drive.google.com/file/d/1bdxVDEU7Ds6m1O_2noiKMBVDmUXSr9F1/view
+- ✅ **Working prototype** - 6 services, 3 websites, 31 endpoints, 183 tests, all paths verified end-to-end
+- ✅ **Architecture diagram** - [`docs/architecture.md`](docs/architecture.md)
+- ✅ **Presentation deck** - [`docs/pitch-deck.md`](docs/pitch-deck.md)
+- 🎬 **Demo video** - https://drive.google.com/file/d/1bdxVDEU7Ds6m1O_2noiKMBVDmUXSr9F1/view
 
 ---
 
@@ -630,7 +630,7 @@ Free-tier, fully env-driven: **Vercel** (dashboard) + **Render** (gateway, backe
 <br>
 
 *Four people. A few days. Free-tier infrastructure.*
-**Because the architecture — not the budget — is the innovation.**
+**Because the architecture - not the budget - is the innovation.**
 
 <br>
 

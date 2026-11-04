@@ -26,5 +26,5 @@ npm run dev        # :4000, forwards to the FastAPI backend on :8000
 | `POST /api/refresh/fraud-graph` | dashboard/ops | pull latest rings from :8003 |
 | `GET /api/gateway/health` | ops | gateway's own liveness |
 
-Payloads must match [`contracts/`](../../contracts/) — the gateway does a cheap shape check
+Payloads must match [`contracts/`](../../contracts/) - the gateway does a cheap shape check
 (`event_id` + `verdict`) and the backend/fusion layer does full schema validation.

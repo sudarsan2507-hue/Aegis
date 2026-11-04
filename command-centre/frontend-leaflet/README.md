@@ -1,4 +1,4 @@
-# Aegis Command Centre — Dashboard (Next.js)
+# Aegis Command Centre - Dashboard (Next.js)
 
 The single screen a police officer watches: three signal cards (scam / counterfeit /
 fraud rings), module health pills, the cross-domain crime map (Leaflet, no token needed),
@@ -13,7 +13,7 @@ npm run dev          # http://localhost:3000
 
 The dashboard talks **only** to the command-centre backend (default
 `http://127.0.0.1:8000`; override with `NEXT_PUBLIC_COMMAND_API`). Start the backend
-first — and any detection services you want live:
+first - and any detection services you want live:
 
 | Service | Port | Start |
 |---|---|---|
@@ -23,12 +23,12 @@ first — and any detection services you want live:
 | fraud-graph | 8003 | see `fraud-graph-ml/README.md` |
 
 Without the detection services the dashboard still renders from the backend's seeded
-contract samples — it is never blocked on other modules.
+contract samples - it is never blocked on other modules.
 
 ## Structure
-- `app/page.tsx` — the dashboard (cards, health, fusion panel); polls `/events` + `/hotspots` every 5 s
-- `app/components/CrimeMap.tsx` — Leaflet map; pulsing markers for cross-domain hubs
-- `lib/api.ts` — typed backend client (`api.events()`, `api.fuse()`, `api.analyzeScam()`, …)
+- `app/page.tsx` - the dashboard (cards, health, fusion panel); polls `/events` + `/hotspots` every 5 s
+- `app/components/CrimeMap.tsx` - Leaflet map; pulsing markers for cross-domain hubs
+- `lib/api.ts` - typed backend client (`api.events()`, `api.fuse()`, `api.analyzeScam()`, …)
 
 ## Stack
-Next.js 16 · React 19 · Tailwind 4 · Leaflet (OpenStreetMap tiles — no API key)
+Next.js 16 · React 19 · Tailwind 4 · Leaflet (OpenStreetMap tiles - no API key)
